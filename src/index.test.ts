@@ -1,9 +1,9 @@
 import { MCEvent } from '@managed-components/types'
-import { generateUUID, getRandomInt, getRequestBody } from '.'
+import { getRandomInt, getRequestBody } from '.'
 
 describe('Snapchat MC works correctly', () => {
-  let fetchedRequests: any = []
-  let setCookies: any = []
+  const fetchedRequests: any = []
+  const setCookies: any = []
 
   const dummyClient = {
     title: 'Zaraz "Test" /t Page',
@@ -18,10 +18,10 @@ describe('Snapchat MC works correctly', () => {
     fetch: () => undefined,
     set: () => undefined,
     execute: () => undefined,
-    return: () => {},
+    return: () => null,
     get: () => undefined,
-    attachEvent: () => {},
-    detachEvent: () => {},
+    attachEvent: () => null,
+    detachEvent: () => null,
   }
 
   const fakeEvent = new Event('event', {}) as MCEvent

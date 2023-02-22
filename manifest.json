@@ -1,7 +1,7 @@
 {
   "name": "Snapchat",
   "namespace": "snapchat",
-  "description": "A Managed Component for making the internet better",
+  "description": "Snapchat Managed Component",
   "icon": "assets/icon.svg",
   "permissions": {
     "access_client_kv": {
