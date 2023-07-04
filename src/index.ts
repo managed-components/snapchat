@@ -96,7 +96,6 @@ export default async function (manager: Manager, settings: ComponentSettings) {
   })
 
   manager.addEventListener('pageview', event => {
-    const eventType = event.payload.ev || 'PAGE_VIEW'
-    handler("PAGE_VIEW", event, settings)
+    handler('PAGE_VIEW', event, settings)
   })
 }
