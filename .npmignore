@@ -1,1 +1,9 @@
 src
+.all-contributorsrc
+.eslintrc.js
+.github
+.prettierrc
+.vscode
+esbuild.js
+tsconfig.build.json
+tsconfig.json
