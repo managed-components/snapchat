@@ -1,5 +1,10 @@
+import crypto from 'crypto'
 import { MCEvent } from '@managed-components/types'
 import { getRandomInt, getRequestBody } from '.'
+
+if (!global.crypto) {
+  vi.stubGlobal('crypto', crypto)
+}
 
 describe('Snapchat MC works correctly', () => {
   const fetchedRequests: any = []
